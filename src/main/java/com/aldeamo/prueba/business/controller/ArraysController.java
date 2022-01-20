@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 public class ArraysController {
     @Autowired
     ArraysService arraysService;
-    @GetMapping("/")
+    @PostMapping("/")
     public ResponseEntity<String> getArrayById(@RequestBody RequestDTO peticion) throws Exception {
         return new ResponseEntity(arraysService.calculateArray(peticion), HttpStatus.OK);
     }

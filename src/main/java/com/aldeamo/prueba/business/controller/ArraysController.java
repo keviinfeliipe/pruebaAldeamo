@@ -8,7 +8,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("aldemo/web/v1/arrays")
+@RequestMapping("aldeamo/web/v1/arrays")
 public class ArraysController {
     @Autowired
     ArraysService arraysService;
